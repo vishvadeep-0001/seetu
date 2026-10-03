@@ -1,10 +1,12 @@
 import { useState } from "react";
-import Navbar from "./Navbar";
+
 import { Link } from "react-router-dom";
+import { Mail, Lock } from "lucide-react";
+import logo from "../assets/images/seetu-logo.png";
 
 const Login = () => {
   const submitHandler = () => {
-    console.log("submit");
+    console.log("Login");
   };
   const changeEventHandler = () => {
     console.log("change event handle");
@@ -12,80 +14,64 @@ const Login = () => {
   const [input, setInput] = useState({
     email: "",
     password: "",
-    role: "",
   });
 
   return (
-    <>
-      <Navbar />
-      <div className="w-full">
-        <div className="flex items-center justify-center max-w-7xl mx-auto">
-          <form
-            onSubmit={submitHandler}
-            className="w-1/2 border border-gray-200 rounded-md p-4 my-10"
-          >
-            <h1 className="font-bold text-xl mb-5">Login</h1>
-            <div className="my-2">
-              <label>Email</label>
+    <div className="flex justify-center">
+      <div className="h-90 w-90">
+        <div className="flex flex-col items-center top-div text-center ">
+          <Link to="/" className="mb-2 size-5/12">
+            <img src={logo} alt="logo" />
+          </Link>
+
+          <h1 className="font-bold text-2xl">Welcome Back</h1>
+          <p className="text-sm text-[#616977] leading-none font-md">
+            Login to your account
+          </p>
+        </div>
+        <div className="form-div mt-4">
+          <form action="" className="flex flex-col gap-3">
+            <div className="border-slate-300 bg-transparent flex p-2 gap-2 border rounded-md">
+              <Mail className="text-slate-500" />
               <input
-                name="email"
                 type="text"
-                value={input.email}
-                placeholder="abc@gmail.com"
-                onChange={changeEventHandler}
-              ></input>
+                className="placeholder:text-slate-400 outline-none"
+                placeholder="Email"
+              />
             </div>
-            <div className="my-2">
-              <label>Password</label>
+
+            <div className="border-slate-300 bg-transparent flex p-2 gap-2 border rounded-md">
+              <Lock className="text-slate-500" />
               <input
                 type="password"
-                name="password"
-                value={input.password}
-                onChange={changeEventHandler}
-                placeholder="*******"
-              ></input>
+                className="placeholder:text-slate-400 outline-none"
+                placeholder="Password"
+              />
             </div>
-            <div className="flex items-center justify-between">
-              <radio className="flex items-center gap-4 my-5">
-                <div className="flex items-center gap-3">
-                  <input
-                    type="radio"
-                    name="role"
-                    onChange={changeEventHandler}
-                    value="student"
-                    checked={input.role === "student"}
-                    className="cursor-pointer"
-                  />
-                  <label>Student</label>
-                </div>
-                <div className="flex items-center gap-3">
-                  <input
-                    type="radio"
-                    name="role"
-                    value="recruiter"
-                    onChange={changeEventHandler}
-                    checked={input.role === "recruiter"}
-                    className="cursor-pointer"
-                  />
-                  <label>Recruiter</label>
-                </div>
-              </radio>
+            <div className="flex justify-end mr-4">
+              <Link to="/forgot" className="text-blue-600 font-medium">
+                Forgot Password?
+              </Link>
             </div>
-            (
-            <button type="submit" className="w-full my-4">
+
+            <button
+              className="rounded-sm bg-blue-600 px-4 py-2 text-ms font-medium text-white hover:bg-blue-700"
+              onClick={submitHandler}
+            >
               Login
             </button>
-            )
-            <span className="text-sm">
-              Don't have an account ?{" "}
-              <Link to="/signup" className="text-blue-600">
-                Signup
-              </Link>
-            </span>
           </form>
         </div>
+        <div className="flex justify-end mr-4 mt-3">
+          <h4 className="text-slate-500 text-md ">
+            Don't have an account?{" "}
+            <Link to="/signup" className="text-blue-600 font-medium">
+              Sign up
+            </Link>
+          </h4>
+        </div>
       </div>
-    </>
+    </div>
   );
 };
 

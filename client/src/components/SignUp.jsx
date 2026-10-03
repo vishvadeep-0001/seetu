@@ -1,7 +1,15 @@
 import Navbar from "./Navbar";
 import logo from "../assets/images/seetu-logo.png";
-import { GraduationCap, Mail, User, UserShield } from "lucide-react";
+import {
+  GraduationCap,
+  Mail,
+  User,
+  Phone,
+  Lock,
+  UserShield,
+} from "lucide-react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const SignUp = () => {
   const [role, setRole] = useState("student");
@@ -10,11 +18,13 @@ const SignUp = () => {
   };
   return (
     <>
-      <Navbar />
       <div className="flex justify-center">
         <div className="h-90 w-90">
           <div className="flex flex-col items-center top-div text-center ">
-            <img src={logo} alt="logo" className="mb-2 size-5/12" />
+            <Link to="/" className="mb-2 size-5/12">
+              <img src={logo} alt="logo" />
+            </Link>
+
             <h1 className="font-bold text-2xl">Create Account</h1>
             <p className="text-sm text-[#616977] leading-none font-md">
               Join us and get started
@@ -39,7 +49,7 @@ const SignUp = () => {
                 />
               </div>
               <div className="border-slate-300 bg-transparent flex p-2 gap-2 border rounded-md">
-                <Mail className="text-slate-500" />
+                <Phone className="text-slate-500" />
                 <input
                   type="number"
                   className="placeholder:text-slate-400 outline-none"
@@ -47,7 +57,7 @@ const SignUp = () => {
                 />
               </div>
               <div className="border-slate-300 bg-transparent flex p-2 gap-2 border rounded-md">
-                <Mail className="text-slate-500" />
+                <Lock className="text-slate-500" />
                 <input
                   type="password"
                   className="placeholder:text-slate-400 outline-none"
@@ -55,7 +65,7 @@ const SignUp = () => {
                 />
               </div>
               <div className="border-slate-300 bg-transparent flex p-2 gap-2 border rounded-md">
-                <Mail className="text-slate-500" />
+                <Lock className="text-slate-500" />
                 <input
                   type="password"
                   className="placeholder:text-slate-400 outline-none"
@@ -98,6 +108,15 @@ const SignUp = () => {
                 Create Account
               </button>
             </form>
+          </div>
+
+          <div className="flex justify-end mr-4 mt-3">
+            <h4 className="text-slate-500 text-md ">
+              Already have an account?{" "}
+              <Link to="/login" className="text-blue-600 font-medium">
+                Login
+              </Link>
+            </h4>
           </div>
         </div>
       </div>
