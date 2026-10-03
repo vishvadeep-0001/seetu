@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 
 const Explore = () => {
   return (
-    <div className="p-15">
+    <div className="pl-15">
       <div className="mb-5">
         <h4 className="font-bold mb-1">Explore Top Carrer Options</h4>
       </div>

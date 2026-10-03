@@ -1,8 +1,10 @@
+import ad1 from "../../assets/images/ads1.png";
+
 const Ad1 = () => {
   return (
-    <div className="p-10">
-      <div className="h-32 border-radius- border-2 border-indigo-600 text-center">
-        Ads
+    <div className="flex justify-center">
+      <div>
+        <img src={ad1} alt="" />
       </div>
     </div>
   );

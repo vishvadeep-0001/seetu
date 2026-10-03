@@ -1,4 +1,5 @@
 import Ad1 from "./HomeSection/Ad1";
+import Ad2 from "./HomeSection/Ad2";
 import Explore from "./HomeSection/Explore";
 import FuturePath from "./HomeSection/FuturePath";
 import Journey from "./HomeSection/Journey";
@@ -14,6 +15,7 @@ const Home = () => {
       <Explore />
       <Journey />
       <List />
+      <Ad2 />
     </div>
   );
 };
