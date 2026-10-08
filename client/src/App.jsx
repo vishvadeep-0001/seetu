@@ -3,6 +3,7 @@ import Home from "./components/Home";
 import Login from "./components/Login";
 import SignUp from "./components/SignUp";
 import ForgotPassword from "./components/ForgotPassword";
+import Quiz from "./components/Quiz";
 
 const appRouter = createBrowserRouter([
   {
@@ -20,6 +21,10 @@ const appRouter = createBrowserRouter([
   {
     path: "/forgot",
     element: <ForgotPassword />,
+  },
+  {
+    path: "/quiz",
+    element: <Quiz />,
   },
 ]);
 

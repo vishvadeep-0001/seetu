@@ -7,7 +7,7 @@ const FuturePath = () => {
       <div className="grid grid-cols-2 gap-4">
         <div className="text-div mt-10">
           <h1 className="text-3xl font-bold text-left mb-1">
-            Find the Best Plan.
+            Find the Best Path.
           </h1>
           <h1 className="font-bold text-3xl">
             <span className="text-3xl font-bold text-blue-700">
