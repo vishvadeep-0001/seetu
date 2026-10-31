@@ -1,5 +1,6 @@
 import { Flag, Landmark, MoveRight, Target, User } from "lucide-react";
 import test from "../../assets/images/test.png";
+import { Link } from "react-router-dom";
 
 const Journey = () => {
   return (
@@ -13,9 +14,11 @@ const Journey = () => {
               Take our smart carrer quiz and get personalized carrer
               recommendations based on your intersts and strenghts.
             </p>
-            <button className="mt-2 rounded-sm bg-blue-600 px-5 flex gap-2 py-2 text-sm font-medium text-white hover:bg-blue-700">
-              Start Carrer Quiz <MoveRight size={20} color="white" />
-            </button>
+            <Link to="/quiz">
+              <button className="mt-2 rounded-sm bg-blue-600 px-5 flex gap-2 py-2 text-sm font-medium text-white hover:bg-blue-700">
+                Start Carrer Quiz <MoveRight size={20} color="white" />
+              </button>
+            </Link>
           </div>
           <div>
             <img src={test} alt="test-image" />

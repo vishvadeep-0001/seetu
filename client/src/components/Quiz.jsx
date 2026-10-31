@@ -125,6 +125,67 @@ const Quiz = () => {
             </div>
           </div>
         </div>
+        {/* Lower bottom */}
+        <div className="">
+          <div className="">
+            <h4 className="text-slate-700 font-bold text-2xl">How it works?</h4>
+          </div>
+          <div className="grid grid-cols-4">
+            <div className="flex flex-col items-center text-center p-5">
+              <div className="h-20 w-20 rounded-full bg-[#e4eeeb] items-center flex justify-center">
+                <h2 className="text-center font-bold text-5xl text-blue-700">
+                  1
+                </h2>
+              </div>
+              <span className="text-slate-800 font-semibold my-1 ">
+                Pay ₹19
+              </span>
+              <p className="text-slate-500 font-semibold">
+                Lorem ipsum dolor sit, amet consectetur adipisicing.
+              </p>
+            </div>
+
+            <div className="flex flex-col items-center text-center p-5">
+              <div className="h-20 w-20 rounded-full bg-[#e4eeeb] items-center flex justify-center">
+                <h2 className="text-center font-bold text-5xl text-blue-700">
+                  2
+                </h2>
+              </div>
+              <span className="text-slate-800 font-semibold my-1 ">
+                Solve the Questions
+              </span>
+              <p className="text-slate-500 font-semibold">
+                Lorem ipsum dolor sit, amet consectetur adipisicing.
+              </p>
+            </div>
+            <div className="flex flex-col items-center text-center p-5">
+              <div className="h-20 w-20 rounded-full bg-[#e4eeeb] items-center flex justify-center">
+                <h2 className="text-center font-bold text-5xl text-blue-700">
+                  3
+                </h2>
+              </div>
+              <span className="text-slate-800 font-semibold my-1 ">
+                Get Your Result
+              </span>
+              <p className="text-slate-500 font-semibold">
+                Lorem ipsum dolor sit, amet consectetur adipisicing.
+              </p>
+            </div>
+            <div className="flex flex-col items-center text-center p-5">
+              <div className="h-20 w-20 rounded-full bg-[#e4eeeb] items-center flex justify-center">
+                <h2 className="text-center font-bold text-5xl text-blue-700">
+                  4
+                </h2>
+              </div>
+              <span className="text-slate-800 font-semibold my-1 ">
+                Plan Your Future
+              </span>
+              <p className="text-slate-500 font-semibold">
+                Lorem ipsum dolor sit, amet consectetur adipisicing.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

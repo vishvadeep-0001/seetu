@@ -23,19 +23,19 @@ const Navbar = () => {
             <Link to="/colleges" className="">
               Colleges
             </Link>
-            <Link to="/carrier" className="text-app-orange">
+            <Link to="/courses" className="text-app-orange">
               Courses
             </Link>
-            <Link to="/carrier" className="text-app-orange ">
+            <Link to="/compare" className="text-app-orange ">
               Compare
             </Link>
-            <Link to="/carrier" className="text-app-orange ">
+            <Link to="/carrers" className="text-app-orange ">
               Careers
             </Link>
-            <Link to="/carrier" className="text-app-orange ">
+            <Link to="/blog" className="text-app-orange ">
               Blog
             </Link>
-            <Link to="/carrier" className="text-app-orange ">
+            <Link to="/resources" className="text-app-orange ">
               Resources
             </Link>
             <Link to="/search" className="text-app-orange ">
